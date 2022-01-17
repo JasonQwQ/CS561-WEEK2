@@ -1,0 +1,15 @@
+{
+    "note": "Config file to mock openweather end point",
+    "mockDirectory": "/..", //文件路径
+    "quiet": false,
+    "port": "7878", //可以修改，8080也行
+    "logRequestHeaders": false,
+    "allowedHeaders": ["Content-Type", "my-custom-header"],
+    "corsCredentials": "true",
+    "webServices": {
+      "data/2.5/weather": { //mock request的网址路径
+      "mockFile": "response.json", //mock data 假文件
+      "verbs": ["get"] //request方式是
+     }
+    }
+   }
